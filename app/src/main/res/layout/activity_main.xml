@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:scrollbars="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.trendyol.bubblescrollbarlib.BubbleScrollBar
+        android:id="@+id/bubble_scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientatrion="vertical"
+        app:bubbleBackground="@drawable/my_scroll"
+        app:scrollbarBackground="@color/colorAccent"
+        app:thumbBackground="@color/colorAccent"
+        app:bubbleTextSize="8sp"
+        app:bubbleMargin="4dp"
+        android:elevation="6dp"
+        android:minWidth="50dp"
+        app:bubbleHeight="50dp"
+        app:bubbleTextColor="@color/colorWhite"
+        android:padding="4dp"/>
+</FrameLayout>
